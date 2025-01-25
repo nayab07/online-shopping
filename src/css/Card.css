@@ -1,0 +1,136 @@
+/* Container for the card section */
+.card-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  /* Container for the cards */
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 260px;
+    padding: 15px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Image section */
+  .card-image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Product name, price, and category */
+  .card-name,
+  .card-price,
+  .card-category {
+    color: #444;
+    font-size: 1rem;
+  }
+  
+  .card-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+  
+  .card-price {
+    font-weight: 600;
+    color: #e44d26;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-category {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .category-label {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Rating section */
+  .card-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .star-icon,
+  .star-icon-empty {
+    width: 18px;
+    height: 18px;
+    margin-right: 3px;
+    color: #f8b400; /* golden color */
+  }
+  
+  .rating-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-left: 5px;
+  }
+  
+  /* Buttons at the bottom */
+  .card-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .add-to-cart,
+  .buy-now {
+    background-color: #444444;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    width: 48%;
+  }
+  
+  .add-to-cart:hover,
+  .buy-now:hover {
+    background-color: #333333;
+  }
+  
+  .buy-now {
+    background-color: #e44d26;
+  }
+  
+  .buy-now:hover {
+    background-color: #bf381f;
+  }
+  

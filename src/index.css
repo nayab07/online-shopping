@@ -1,0 +1,12 @@
+/* App.css */
+.centered-image {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image {
+    width: 4rem; /* w-16 in Tailwind */
+    padding-top: 5rem; /* py-20 in Tailwind */
+    padding-bottom: 5rem; /* py-20 in Tailwind */
+  }
+  

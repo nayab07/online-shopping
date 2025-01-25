@@ -1,0 +1,86 @@
+/* Navbar.css */
+
+/* General Navbar Styles */
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #ff6347; /* Add a hover effect */
+}
+
+.navbar-li {
+  color: #fff;
+  list-style: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.navbar-li:hover {
+  color: #ff6347; /* Add hover effect for logout */
+}
+
+/* Mobile menu styles */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* When the screen is small enough (e.g., max-width 768px), display the hamburger menu and stack the nav items */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none; /* Hide default nav links */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 20px;
+    z-index: 999;
+  }
+
+  .navbar-links.active {
+    display: flex; /* Show the links when the menu is toggled */
+  }
+
+  .navbar-logo {
+    font-size: 20px;
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger on small screens */
+  }
+}
+
